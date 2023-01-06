@@ -5,12 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      World Material and Painterly way</title>
+      World Material and Painterly way
+    </title>
     <link rel="stylesheet" href="/src/css/_reset.css" />
     <link rel="stylesheet" href="/src/css/_base.css" />
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/src/css/_header.css" />
   </head>
   <body>
+    <header class="world-header">
+      <!-- desktop nav bar -->
+      <nav class="world-header__navbar">
+        <!-- button to show menu for mobile screen  -->
+        <div class="world-header__btn-menu"></div>
+
+        <!-- site logo -->
+        <a href="#" class="world-header__navbar__logo-link">
+          <img
+            src="assets/img/world-logo.PNG"
+            alt="Logo World Material and Painterly way"
+            class="world-header__navbar__logo-img"
+          />
+        </a>
+
+        <!-- menu center links -->
+        <menu class="world-header__navbar__links">
+          <a href="#" class="world-header__navbar__links_item">Exibition</a>
+          <a href="#" class="world-header__navbar__links_item">Artists</a>
+          <a href="#" class="world-header__navbar__links_item">Press</a>
+          <a href="#" class="world-header__navbar__links_item">Shop</a>
+        </menu>
+
+        <!-- "cart" item -->
+        <a
+          href="#"
+          class="world-header__navbar__links_item world-header__navbar__links_item--cart"
+        >
+          Cart
+        </a>
+      </nav>
+
+      <!-- mobile menu -->
+      <nav class="world-header__mobile-nav">
+        <!-- button to close menu for mobile screen  -->
+        <div class="world-header__close-menu"></div>
+        <menu class="world-header__mobile-nav__links">
+          <a href="#" class="world-header__mobile-nav__links_item">Exibition</a>
+          <a href="#" class="world-header__mobile-nav__links_item">Artists</a>
+          <a href="#" class="world-header__mobile-nav__links_item">Press</a>
+          <a href="#" class="world-header__mobile-nav__links_item">Shop</a>
+          <a href="#" class="world-header__mobile-nav__links_item">Cart</a>
+        </menu>
+      </nav>
+    </header>
+
+    <img src="/source/word maquette.webp" alt="" />
+
     <script src="/index.js"></script>
   </body>
 </html>

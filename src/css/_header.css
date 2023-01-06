@@ -1,0 +1,231 @@
+/* || Header */
+.world-header {
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar */
+.world-header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+
+    height: 54px;
+    width: 872px;
+    max-width: 95%;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+
+    border: 1px solid #fffffc53;
+    border-radius: 44px;
+}
+
+/* Hide the button menu on desktop screens */
+.world-header__btn-menu {
+    display: none;
+}
+
+/* button to display the menu for mobiles */
+.world-header__btn-menu::before {
+    content: "\2630";
+    color: var(--color-white);
+    font-size: 18px;
+    padding: 8px 10px;
+    transition: .5s;
+}
+
+.world-header__btn-menu:hover:before {
+    cursor: pointer;
+    color: var(--color-yellow);
+}
+
+/* site logo */
+.world-header__navbar__logo-link {
+    min-width: 52px;
+    height: auto;
+    transition: .5s;
+}
+
+.world-header__navbar__logo-link:hover {
+    opacity: .6;
+}
+
+.world-header__navbar__logo-img {
+    width: clamp(52px, 100%, 72px);
+}
+
+/* Menu Links */
+.world-header__navbar__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px;
+}
+
+.world-header__navbar__links_item {
+    color: var(--color-white);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 12px 0;
+    text-transform: uppercase;
+
+    transition: .5s;
+}
+
+.world-header__navbar__links_item:hover {
+    color: var(--color-yellow);
+}
+
+/* "Cart" link item */
+.world-header__navbar__links_item--cart {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.world-header__navbar__links_item--cart::after {
+    content: '0';
+    width: 54px;
+    height: 54px;
+
+    position: relative;
+    right: -2px;
+    padding-top: 20px;
+
+    border-radius: 50%;
+    background-color: var(--color-yellow);
+
+    font-family: var(--font-hatton);
+    font-size: 16px;
+    color: #181c1b;
+    text-align: center;
+}
+
+/* ==================== Menu for Mobile screens ==================== */
+/* Modal with transparent color and Wrapper of Menu links */
+.world-header__mobile-nav {
+    position: absolute;
+    top: 0;
+    /* To animate the opening and closing of the menu */
+    left: -100%;
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(35, 35, 51, 0.748);
+
+    transition: .5s;
+}
+
+/* To display the menu when clicking on menu-button */
+.world-header__mobile-nav--active {
+    left: 0;
+}
+
+/* Menu Links */
+.world-header__mobile-nav__links {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 82px;
+
+    background-color: #fcfffe;
+    background-color: var(--color-yellow);
+}
+
+/* button to close mobile menu */
+.world-header__close-menu {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: calc(80% - 50px);
+    border-radius: 50%;
+    background-color: var(--color-green);
+    border: 2px solid transparent;
+    padding: 7px 0;
+    z-index: 1;
+
+    transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.world-header__close-menu:hover {
+    background-color: var(--color-white);
+    transform: rotate(90deg);
+}
+
+.world-header__close-menu:active {
+    border: 2px solid #3a6d6dbf;
+}
+
+.world-header__close-menu::before {
+    content: "\2716";
+    color: var(--color-white);
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: .5s;
+}
+
+.world-header__close-menu:hover:before {
+    cursor: pointer;
+    color: var(--color-green);
+}
+
+/* Links item */
+.world-header__mobile-nav__links_item {
+    color: var(--color-green);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 2px solid var(--color-green);
+    transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.world-header__mobile-nav__links_item:hover {
+    background-color: var(--color-white);
+    color: black;
+    letter-spacing: 2px;
+}
+
+/* ==================== || Responsive ==================== */
+
+/* for screens with a width <= 680px */
+@media screen and (max-width: 680px) {
+
+    /* Hide desktop menu center links */
+    .world-header__navbar__links {
+        display: none;
+    }
+
+    /* Show mobile menu-button */
+    .world-header__btn-menu {
+        display: block;
+    }
+}
+
+/* for screens with a width <= 340px */
+@media screen and (max-width: 340px) {
+
+    /* Hide "Cart" link item */
+    .world-header__navbar__links_item--cart {
+        display: none;
+    }
+
+    /* Place the site logo in center */
+    .world-header__navbar {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .world-header__btn-menu {
+        position: absolute;
+        left: 20px;
+    }
+
+}

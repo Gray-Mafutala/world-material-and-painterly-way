@@ -1,15 +1,33 @@
-/* || CSS Variables */
+/* || Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
+@font-face {
+    font-family: 'hatton';
+    src: url('/assets/fonts/hatton/Hatton-Bold-700.otf');
+}
+
+/* || CSS Variables */
 :root {
-    --default-background-color: #fdfdfd;
-    --default-text-color: #333;
+    --color-green: #294242;
+    --color-white: #fcfffe;
+    --color-yellow: #f7b941;
+
+    --font-hatton: hatton, Georgia, 'Times New Roman', Times, serif;
+    --font-poppins: 'Roboto', sans-serif;
 }
 
 
 /* || General Styles */
-
 body {
-    color: var(--default-text-color);
-    background: var(--default-background-color);
+    color: var(--color-white);
+    background: var(--color-green);
+    font-family: var(--font-poppins);
     font-size: 16px;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
