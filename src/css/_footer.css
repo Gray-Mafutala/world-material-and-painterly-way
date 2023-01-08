@@ -5,7 +5,7 @@
 
     width: 872px;
     max-width: 95%;
-    margin: 0 auto;
+    margin: 40px auto 0;
 }
 
 .footer__title {
@@ -51,6 +51,7 @@
     cursor: pointer;
     transform: scale(1.5) rotate(360deg);
     border: 2px solid var(--color-yellow);
+    backdrop-filter: contrast(1.5);
     z-index: 1;
 }
 
@@ -74,6 +75,15 @@
 
 /* ==================== || Responsive ==================== */
 @media screen and (max-width: 960px) {
+
+    /* Pour avoir le scroll et autant de hauteur nécessaire,
+     car y aura plus du contenu vers le bas */
+    body {
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    /* On renvoie le container des circles images à la ligne */
     .footer {
         gap: 20px;
         flex-wrap: wrap;
@@ -87,6 +97,12 @@
     .footer__para {
         width: 52%;
     }
+
+    /* On décolle un peu le container des circles images de la bordure basse du body */
+    .footer__right-content {
+        margin-bottom: 20px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -94,7 +110,6 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-
         gap: 16px;
     }
 

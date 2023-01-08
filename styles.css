@@ -3,16 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(18, 37, 85); */
-    border: 2px solid red;
-
-    user-select: none;
+    padding: 0 20px;
 }
 
 /* For the 3 elliptical boxes */
 .main-content__box {
-    height: 410px;
-    width: 280px;
+    height: 420px;
+    width: 290px;
+    min-width: 240px;
     border-radius: 204px;
 }
 
@@ -45,15 +43,14 @@
     letter-spacing: 2px;
     font-weight: 400;
     text-transform: uppercase;
+    user-select: none;
 }
-
 
 .main-content__box__small-star {
     min-width: 24px;
     width: 24px;
     margin-top: 20px;
 }
-
 
 .main-content__box__hero-text {
     font-family: var(--font-hatton);
@@ -68,12 +65,27 @@
 .main-content__box__btn-discover {
     padding: 18px 28px 15px;
     line-height: 1.2;
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 14px;
+    font-family: var(--font-rubik);
+    font-weight: 500;
     color: var(--color-black-green-end);
     background-color: var(--color-yellow);
     border-radius: 24px;
+    border: 2px solid transparent;
     text-transform: uppercase;
+    transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.main-content__box__btn-discover:hover {
+    border-color: var(--color-white);
+    background-color: var(--color-black-green-end);
+    color: var(--color-yellow);
+}
+
+.main-content__box__btn-discover:focus {
+    border-color: var(--color-peru);
+    background-color: var(--color-white);
+    color: var(--color-black-green-end);
 }
 
 /* ====== Center elliptical box ====== */
@@ -82,7 +94,7 @@
     justify-content: center;
     align-items: center;
 
-    margin: 0 -20px;
+    margin: 0 -44px;
     background: url('/assets/img/background-blue-agate.jpg') no-repeat center center / cover;
 }
 
@@ -136,10 +148,10 @@
 .main-content__box__corner-curved-text text {}
 
 
-
-
-/* For debug */
-.maquette {
-    width: 70%;
-    height: auto;
+/* ==================== || Responsive ==================== */
+@media screen and (max-width: 720px) {
+    .main-content {
+        flex-direction: column;
+        gap: 32px;
+    }
 }
