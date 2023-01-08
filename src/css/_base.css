@@ -6,6 +6,11 @@
     src: url('/assets/fonts/hatton/Hatton-Bold-700.otf');
 }
 
+@font-face {
+    font-family: 'hatton-medium';
+    src: url('/assets/fonts/hatton/Hatton-Medium-500.otf');
+}
+
 /* || CSS Variables */
 :root {
     --color-green: #294242;

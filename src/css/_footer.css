@@ -1,0 +1,108 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 872px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.footer__title {
+    font-family: 'hatton-medium';
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-weight: 500;
+    width: 210px;
+}
+
+.footer__para {
+    font-size: 14px;
+    line-height: 1.4;
+    width: 440px;
+}
+
+/* 3 Circles Images and Yellow Right Arrow */
+.footer__right-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+}
+
+/* 3 circles images wrapper */
+.footer__right-content__circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__right-content__circle__item {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.footer__right-content__circle__item:hover {
+    cursor: pointer;
+    transform: scale(1.5) rotate(360deg);
+    border: 2px solid var(--color-yellow);
+    z-index: 1;
+}
+
+.footer__right-content__circle__item--center {
+    margin: 0 -12px;
+}
+
+/* yellow right arrow */
+.footer__footer__right-content__arrow {
+    transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.footer__footer__right-content__arrow:hover {
+    cursor: pointer;
+    transform: scale(1.2) rotate(-45deg);
+}
+
+.footer__footer__right-content__arrow__icon {
+    width: 32px;
+}
+
+/* ==================== || Responsive ==================== */
+@media screen and (max-width: 960px) {
+    .footer {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__title {
+        /* width: 30%; */
+    }
+
+    .footer__para {
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        gap: 16px;
+    }
+
+    .footer__title {
+        width: auto;
+    }
+
+    .footer__para {
+        width: auto;
+    }
+}
