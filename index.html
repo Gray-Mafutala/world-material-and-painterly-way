@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/src/css/_header.css" />
   </head>
   <body>
+    <!-- || Header -->
     <header class="world-header">
       <!-- desktop nav bar -->
       <nav class="world-header__navbar">
@@ -59,7 +60,73 @@
       </nav>
     </header>
 
-    <img src="/source/word maquette.webp" alt="" />
+    <!-- || Main content -->
+    <main class="main-content">
+      <!-- Left box -->
+      <div class="main-content__box main-content__box--left">
+        <!-- curved top text -->
+        <svg
+          class="curved-text main-content__box__top-curved-text"
+          viewBox="0 0 400 220"
+        >
+          <path
+            id="curve"
+            fill="none"
+            d="M 40,216.36655 C 33.463161,133.00447 97.912325,38.853776 201.46725,39.949804 302.07717,38.916413 370.05829,126.73516 360,216.36655"
+          />
+          <text fill="#000">
+            <textPath xlink:href="#curve" startOffset="15">
+              Conceptually urban idiom of contemprorary art
+            </textPath>
+          </text>
+        </svg>
+
+        <!-- small star shape -->
+        <div class="main-content__box__small-star">
+          <img src="/assets/img/small-star.svg" alt="" />
+        </div>
+        <h2 class="main-content__box__hero-text">
+          <span class="main-content__box__hero-text__top">The</span>
+          Gallery
+        </h2>
+        <a href="#" class="main-content__box__btn-discover">Discover</a>
+      </div>
+
+      <!-- Center box -->
+      <div class="main-content__box main-content__box--center">
+        <div class="main-content__box__green-star">&</div>
+      </div>
+
+      <!-- Right box -->
+      <div class="main-content__box main-content__box--right">
+        <h2 class="main-content__box__text-century">21st. century</h2>
+
+        <!-- curved corner text -->
+        <svg
+          class="curved-text main-content__box__corner-curved-text"
+          viewBox="0 0 400 250"
+        >
+          <path
+            id="curve"
+            fill="none"
+            d="M 40,216.36655 C 33.463161,133.00447 97.912325,38.853776 201.46725,39.949804 302.07717,38.916413 370.05829,126.73516 360,216.36655"
+          />
+          <text fill="#000">
+            <textPath xlink:href="#curve" startOffset="15">
+              Material & painterly way
+            </textPath>
+          </text>
+        </svg>
+      </div>
+    </main>
+
+    <img
+      class="maquette"
+      src="/source/word maquette.webp"
+      alt=""
+      width="80px"
+      height="auto"
+    />
 
     <script src="/index.js"></script>
   </body>

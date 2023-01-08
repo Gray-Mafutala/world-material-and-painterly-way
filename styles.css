@@ -1,0 +1,145 @@
+/* || Main content */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(18, 37, 85); */
+    border: 2px solid red;
+
+    user-select: none;
+}
+
+/* For the 3 elliptical boxes */
+.main-content__box {
+    height: 410px;
+    width: 280px;
+    border-radius: 204px;
+}
+
+/* ====== Left elliptical box ====== */
+.main-content__box--left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+
+    background: linear-gradient(180deg, var(--color-black-green-start),
+            var(--color-black-green-end));
+
+    z-index: 1;
+
+    position: relative;
+}
+
+.main-content__box__top-curved-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.curved-text text {
+    fill: var(--color-white);
+    font-family: var(--font-poppins);
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.main-content__box__small-star {
+    min-width: 24px;
+    width: 24px;
+    margin-top: 20px;
+}
+
+
+.main-content__box__hero-text {
+    font-family: var(--font-hatton);
+    font-size: 3.4rem;
+    text-align: center;
+}
+
+.main-content__box__hero-text__top {
+    font-size: 2rem;
+}
+
+.main-content__box__btn-discover {
+    padding: 18px 28px 15px;
+    line-height: 1.2;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-black-green-end);
+    background-color: var(--color-yellow);
+    border-radius: 24px;
+    text-transform: uppercase;
+}
+
+/* ====== Center elliptical box ====== */
+.main-content__box--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 -20px;
+    background: url('/assets/img/background-blue-agate.jpg') no-repeat center center / cover;
+}
+
+.main-content__box__green-star {
+    --size: 140px;
+    width: var(--size);
+    height: var(--size);
+    line-height: calc(var(--size) + 5px);
+    font-family: var(--font-hatton);
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-white);
+
+    background: url('/assets/img/green-star.svg') no-repeat center center / cover;
+}
+
+/* ====== Right elliptical box ====== */
+.main-content__box--right {
+    display: flex;
+    justify-content: end;
+
+    background: linear-gradient(30deg, lime, #131c1c);
+    background: linear-gradient(180deg, var(--color-black-green-start),
+            var(--color-black-green-end));
+
+    background: transparent url('/assets/img/girl-afro-hair.png') no-repeat center center / cover;
+
+
+
+    z-index: 1;
+
+    position: relative;
+}
+
+.main-content__box__text-century {
+    font-family: var(--font-hatton);
+    font-size: 2rem;
+    text-align: left;
+    width: 150px;
+    margin: 20px 20px 0 0;
+}
+
+
+.main-content__box__corner-curved-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.main-content__box__corner-curved-text text {}
+
+
+
+
+/* For debug */
+.maquette {
+    width: 70%;
+    height: auto;
+}

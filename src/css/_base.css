@@ -1,5 +1,5 @@
 /* || Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
 @font-face {
     font-family: 'hatton';
@@ -9,6 +9,8 @@
 /* || CSS Variables */
 :root {
     --color-green: #294242;
+    --color-black-green-start: #101c1c;
+    --color-black-green-end: #181c1b;
     --color-white: #fcfffe;
     --color-yellow: #f7b941;
 
