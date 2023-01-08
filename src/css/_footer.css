@@ -91,7 +91,7 @@
     }
 
     .footer__title {
-        /* width: 30%; */
+        width: 30%;
     }
 
     .footer__para {
@@ -105,7 +105,7 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     .footer {
         flex-direction: column;
         justify-content: center;
@@ -119,5 +119,11 @@
 
     .footer__para {
         width: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__title {
+        max-width: 210px;
     }
 }

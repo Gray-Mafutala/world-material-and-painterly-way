@@ -45,16 +45,16 @@
 .world-header__navbar__logo-link {
     min-width: 52px;
     height: auto;
-    transition: .5s;
-}
-
-.world-header__navbar__logo-link:hover {
-    opacity: .8;
-    transform: translateX(5px);
 }
 
 .world-header__navbar__logo-img {
     width: clamp(52px, 100%, 72px);
+    transition: .5s;
+}
+
+.world-header__navbar__logo-img:hover {
+    opacity: .8;
+    transform: translateX(5px);
 }
 
 /* Menu Links */
@@ -70,7 +70,8 @@
     font-size: 14px;
     font-family: var(--font-rubik);
     font-weight: 400;
-    padding: 12px 0;
+    padding: 10px 0;
+    line-height: 1.5;
     user-select: none;
     text-transform: uppercase;
 
@@ -95,7 +96,7 @@
 
     position: relative;
     right: -2px;
-    padding-top: 18px;
+    line-height: 3.5rem;
 
     border-radius: 50%;
     background-color: var(--color-yellow);
@@ -238,12 +239,15 @@
     /* Place the site logo in center */
     .world-header__navbar {
         padding-left: 0;
-        justify-content: center;
     }
 
     .world-header__btn-menu {
         position: absolute;
         left: 20px;
+    }
+
+    .world-header__navbar__logo-link {
+        text-align: center;
     }
 
 }

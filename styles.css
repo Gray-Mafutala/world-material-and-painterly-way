@@ -116,14 +116,11 @@
     display: flex;
     justify-content: end;
 
-    background: linear-gradient(30deg, lime, #131c1c);
-    background: linear-gradient(180deg, var(--color-black-green-start),
-            var(--color-black-green-end));
-
-    background: transparent url('/assets/img/girl-afro-hair.png') no-repeat center center / cover;
-
-
-
+    background: url('/assets/img/girl-afro-hair.png') no-repeat center center / cover;
+    box-shadow: -3px 12px 3px -12px var(--color-white),
+        7px 10px 3px -12px var(--color-white),
+        12px 10px 2px -16px var(--color-white),
+        23px 7px 3px -23px var(--color-white);
     z-index: 1;
 
     position: relative;
