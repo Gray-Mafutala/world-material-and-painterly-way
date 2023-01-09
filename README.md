@@ -9,9 +9,12 @@
 ### Overview after integration
 
 - **Desktop**
-  ![Site on desktop after integration](http://assets/for-readme-file/desktop-screen.PNG)
+
+  ![Site on desktop after integration](/readme-img/desktop-screen.PNG)
+  
 - **Mobile**
-  ![Site on mobile after integration](http://assets/for-readme-file/mobile-screen.PNG)
+
+  ![Site on mobile after integration](/readme-img/mobile-screen.PNG)
 
 ---
 
