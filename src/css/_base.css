@@ -1,20 +1,22 @@
 /* || Fonts Import */
-/* Roboto for curved text and footer paragraph */
+/* Apply to curved texts and footer paragraph */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
-/* For Nav-links */
+/* Apply to Nav-links */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
+/* Apply to h2 tags of elliptical boxes And */
 @font-face {
     font-family: 'hatton';
     src: url('/assets/fonts/hatton/Hatton-Bold-700.otf');
 }
 
-/* For boxes text and footer h3 */
+/* Apply to h3 tag of footer */
 @font-face {
     font-family: 'hatton-medium';
     src: url('/assets/fonts/hatton/Hatton-Medium-500.otf');
 }
+
 
 /* || CSS Variables */
 :root {
@@ -25,7 +27,7 @@
     --color-yellow: #f7b941;
     --color-peru: #966c18;
 
-    --font-hatton: hatton, Georgia, 'Times New Roman', Times, serif;
+    --font-hatton: hatton, Georgia, serif;
     --font-roboto: 'Roboto', sans-serif;
     --font-rubik: 'Rubik', sans-serif;
 }
@@ -39,6 +41,11 @@ body {
     font-size: 16px;
     font-weight: 400;
 
+    height: 100vh;
+}
+
+/* Height of body tag when opening the mobile menu */
+.body-height-open-mobile-menu {
     height: 100vh;
     overflow-y: hidden;
 }

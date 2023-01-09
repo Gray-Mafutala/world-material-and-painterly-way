@@ -16,9 +16,9 @@
   <body>
     <!-- || Header -->
     <header class="world-header">
-      <!-- desktop nav bar -->
+      <!-- desktop nav-bar -->
       <nav class="world-header__navbar">
-        <!-- button to show menu for mobile screen  -->
+        <!-- button to show mobile-menu  -->
         <div class="world-header__btn-menu"></div>
 
         <!-- site logo -->
@@ -49,7 +49,7 @@
 
       <!-- mobile menu -->
       <nav class="world-header__mobile-nav">
-        <!-- button to close menu for mobile screen  -->
+        <!-- button to close mobile-menu  -->
         <div class="world-header__close-menu"></div>
         <menu class="world-header__mobile-nav__links">
           <a href="#" class="world-header__mobile-nav__links_item">Exibition</a>
@@ -95,7 +95,7 @@
 
       <!-- Center box -->
       <div class="main-content__box main-content__box--center">
-        <div class="main-content__box__green-star">&</div>
+        <span class="main-content__box__green-star">&</span>
       </div>
 
       <!-- Right box -->
@@ -105,16 +105,19 @@
         <!-- curved corner text -->
         <svg
           class="curved-text main-content__box__corner-curved-text"
-          viewBox="0 0 400 250"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="100 283 400 250"
         >
           <path
-            id="curve"
+            id="curve2"
             fill="none"
-            d="M 40,216.36655 C 33.463161,133.00447 97.912325,38.853776 201.46725,39.949804 302.07717,38.916413 370.05829,126.73516 360,216.36655"
+            d="M 100 300 C 123.541 582.945 472.441 591.159 500 300"
           />
-          <text fill="#000">
-            <textPath xlink:href="#curve" startOffset="15">
-              Material & painterly way
+
+          <text font-size="16" fill="#000000">
+            <textPath xlink:href="#curve2" side="left" startOffset="290">
+              Material &amp; painterly way
             </textPath>
           </text>
         </svg>

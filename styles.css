@@ -6,13 +6,16 @@
     padding: 0 20px;
 }
 
-/* For the 3 elliptical boxes */
+/* APply to the 3 elliptical boxes */
 .main-content__box {
     height: 420px;
     width: 290px;
     min-width: 240px;
     border-radius: 204px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    user-select: none;
 }
+
 
 /* ====== Left elliptical box ====== */
 .main-content__box--left {
@@ -43,7 +46,10 @@
     letter-spacing: 2px;
     font-weight: 400;
     text-transform: uppercase;
-    user-select: none;
+}
+
+.main-content__box__top-curved-text text {
+    transform: translateX(-2px);
 }
 
 .main-content__box__small-star {
@@ -88,6 +94,7 @@
     color: var(--color-black-green-end);
 }
 
+
 /* ====== Center elliptical box ====== */
 .main-content__box--center {
     display: flex;
@@ -110,6 +117,7 @@
 
     background: url('/assets/img/green-star.svg') no-repeat center center / cover;
 }
+
 
 /* ====== Right elliptical box ====== */
 .main-content__box--right {
@@ -134,15 +142,16 @@
     margin: 20px 20px 0 0;
 }
 
-
 .main-content__box__corner-curved-text {
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: rotate(180deg);
+    transform: translate(-4px, -4px) rotate(-3deg);
 }
 
-.main-content__box__corner-curved-text text {}
+.main-content__box__corner-curved-text text {
+    letter-spacing: 4px;
+}
 
 
 /* ==================== || Responsive ==================== */
