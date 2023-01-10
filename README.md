@@ -1,6 +1,6 @@
 ## From Image design to code — HTML/CSS and JS
 
-### 🖈 World Material and Painterly way Landing Page
+### 🖈 World Material and Painterly way · Landing Page
 
 ### 1. Source image design
 
