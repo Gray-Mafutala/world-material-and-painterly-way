@@ -1,21 +1,24 @@
 ## From Image design to code — HTML/CSS and JS
 
-### World Material and Painterly way
+### 🖈 World Material and Painterly way Landing Page
 
-### Source image design
+### 1. Source image design
 
 ![Source image design](/readme-img/source.jpg)
 
-### Overview after integration
+### 2. Overview after integration
 
 - **Desktop**
-  ![Site on desktop after integration](http://assets/for-readme-file/desktop-screen.PNG)
+
+  ![Site on desktop after integration](/readme-img/desktop-screen.PNG)
+  
 - **Mobile**
-  ![Site on mobile after integration](http://assets/for-readme-file/mobile-screen.PNG)
+
+  ![Site on mobile after integration](/readme-img/mobile-screen.PNG)
 
 ---
 
-### Infos
+### 3. Infos
 
 - 🔗 **Figma model** [World material and painterly way](https://dribbble.com/shots/18607328-Web-site-design-landing-page-home-page-ui)
 - Preferably to be tested with a **_local server_**, like live server.
