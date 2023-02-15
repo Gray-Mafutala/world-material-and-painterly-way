@@ -45,11 +45,13 @@
 .world-header__navbar__logo-link {
     min-width: 52px;
     height: auto;
+    cursor: default;
 }
 
 .world-header__navbar__logo-img {
     width: clamp(52px, 100%, 72px);
     transition: .5s;
+    cursor: pointer;
 }
 
 .world-header__navbar__logo-img:hover {
