@@ -1,20 +1,15 @@
 /* || Fonts Import */
-/* Apply to curved texts and footer paragraph */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
-
-/* Apply to Nav-links */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
-/* Apply to h2 tags of elliptical boxes And */
 @font-face {
-    font-family: 'hatton';
-    src: url('/assets/fonts/hatton/Hatton-Bold-700.otf');
+    font-family: "hatton";
+    src: url("/assets/fonts/hatton/Hatton-Bold-700.otf");
 }
 
-/* Apply to h3 tag of footer */
 @font-face {
-    font-family: 'hatton-medium';
-    src: url('/assets/fonts/hatton/Hatton-Medium-500.otf');
+    font-family: "hatton-medium";
+    src: url("/assets/fonts/hatton/Hatton-Medium-500.otf");
 }
 
 
