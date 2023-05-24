@@ -8,9 +8,9 @@
 
 /* APply to the 3 elliptical boxes */
 .main-content__box {
-    height: 420px;
-    width: 290px;
-    min-width: 240px;
+    /* fluid between 320px to 680px */
+    height: clamp(23.125rem, 13.889vw + 20.347rem, 26.25rem);
+    width: clamp(15rem, 13.889vw + 12.222rem, 18.125rem);
     border-radius: 204px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     user-select: none;
@@ -53,30 +53,35 @@
 }
 
 .main-content__box__small-star {
-    min-width: 24px;
-    width: 24px;
+    /* fluid between 320px to 680px */
+    min-width: clamp(1.25rem, 1.111vw + 1.028rem, 1.5rem);
+    width: clamp(1.25rem, 1.111vw + 1.028rem, 1.5rem);
     margin-top: 20px;
 }
 
 .main-content__box__hero-text {
     font-family: var(--font-hatton);
-    font-size: 3.4rem;
+    /* fluid between 320px to 768px */
+    font-size: clamp(2rem, 4.911vw + 1.018rem, 3.375rem);
     text-align: center;
 }
 
 .main-content__box__hero-text__top {
-    font-size: 2rem;
+    display: block;
+    /* fluid between 320px to 768px */
+    font-size: clamp(1.5rem, 1.786vw + 1.143rem, 2rem);
+    line-height: 1.2;
 }
 
 .main-content__box__btn-discover {
     padding: 18px 28px 15px;
-    line-height: 1.2;
-    font-size: 14px;
+    line-height: 1;
+    font-size: .9rem;
     font-family: var(--font-rubik);
     font-weight: 500;
     color: var(--color-black-green-end);
     background-color: var(--color-yellow);
-    border-radius: 24px;
+    border-radius: 30px;
     border: 2px solid transparent;
     text-transform: uppercase;
     transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -106,16 +111,19 @@
 }
 
 .main-content__box__green-star {
-    --size: 140px;
+    /* fluide between 320px to 680px */
+    --size: clamp(6.875rem, 8.333vw + 5.208rem, 8.75rem);
     width: var(--size);
     height: var(--size);
     line-height: calc(var(--size) + 5px);
     font-family: var(--font-hatton);
-    font-size: 2rem;
+
+    /* fluid between 320px to 768px */
+    font-size: clamp(1.5rem, 1.786vw + 1.143rem, 2rem);
     text-align: center;
     color: var(--color-white);
 
-    background: url('/assets/img/green-star.svg') no-repeat center center / cover;
+    background: url('/assets/img/green-star.svg') no-repeat center / cover;
 }
 
 
@@ -136,7 +144,8 @@
 
 .main-content__box__text-century {
     font-family: var(--font-hatton);
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 1.786vw + 1.143rem, 2rem);
+    line-height: 1.1;
     text-align: left;
     width: 150px;
     margin: 20px 20px 0 0;
@@ -159,5 +168,12 @@
     .main-content {
         flex-direction: column;
         gap: 32px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-content__box__btn-discover {
+        padding: 14px 20px 10px;
+        font-size: .8rem;
     }
 }

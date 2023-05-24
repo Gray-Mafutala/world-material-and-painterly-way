@@ -1,4 +1,4 @@
-// To animate the page at loading
+// To animate contents of the page on loading
 
 const header = document.querySelector('.world-header__navbar');
 

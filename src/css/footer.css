@@ -50,7 +50,7 @@
 
 .footer__right-content__circle__item:hover {
     cursor: pointer;
-    transform: translateY(-10px) scale(1.4) rotate(360deg);
+    transform: translateY(-10px) scale(1.1) rotate(360deg);
     border: 2px solid var(--color-yellow);
     z-index: 1;
 }
@@ -123,8 +123,9 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 340px) {
     .footer__title {
         max-width: 210px;
+        font-size: 1.2rem;
     }
 }

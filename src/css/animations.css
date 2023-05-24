@@ -12,11 +12,10 @@
 }
 
 .header_animation {
-    animation: header_anim 1s ease;
+    animation: header_anim .8s cubic-bezier(0.1, -1.56, 0.58, 1);
 }
 
-/* ======== Amimation of main-content ======== */
-
+/* ======== Amimation of main-content (ellipses) ======== */
 @keyframes ellipse_anim {
     0% {
         opacity: 0;
@@ -29,8 +28,16 @@
     }
 }
 
-.ellipse-anim {
+.main-content__box--left.ellipse-anim {
     animation: ellipse_anim 1s ease;
+}
+
+.main-content__box--center.ellipse-anim {
+    animation: ellipse_anim 1.2s cubic-bezier(0.1, -1.56, 0.58, 1);
+}
+
+.main-content__box--right.ellipse-anim {
+    animation: ellipse_anim 1.6s cubic-bezier(0.1, -1.56, 0.58, 1) 100ms;
 }
 
 /*  ======== Animation of footer elements ======== */
@@ -48,5 +55,5 @@
 }
 
 .footer-element-anim {
-    animation: footer_element_anim 1s ease;
+    animation: footer_element_anim 1.8s cubic-bezier(0.1, -1.56, 0.58, 1) 200ms;
 }
