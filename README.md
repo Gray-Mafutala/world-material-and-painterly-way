@@ -7,7 +7,7 @@
 ---
 
 ### Overview
-### 1. Source image design
+### 1. Source image
 ![Source image design](/readme-img/source.jpg)
 
 ### 2. After integration
