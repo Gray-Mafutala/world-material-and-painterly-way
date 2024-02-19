@@ -158,6 +158,8 @@
 /* button to close mobile-menu */
 .world-header__close-menu {
     display: block;
+    height: 32px;
+    width: 32px;
     position: absolute;
     top: 12px;
     left: calc(80% - 50px);
